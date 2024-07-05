@@ -44,4 +44,3 @@ create_media_feed(
     cloudfront_context="",
     override_type="",
 )
-# print(playlist["playlist"][0])
