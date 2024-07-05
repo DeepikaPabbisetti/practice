@@ -25,7 +25,6 @@ def create_media_feed(
     override_type,
 ):
     global playlist
-    # print(playlist)
     playlist_item = playlist['playlist'][0]
     params = extract_params(
         create_media_feed, locals(), playlist_item
@@ -44,4 +43,4 @@ create_media_feed(
     cloudfront_context="",
     override_type="",
 )
-# print(playlist["playlist"][0])
+
