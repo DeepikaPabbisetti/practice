@@ -5,8 +5,8 @@ from response import playlist
 
 
 def extract_params(function_name, localnamespace, playlist_item):
-    sig = inspect.signature(function_name)
-    params = [param.name for param in sig.parameters.values()]
+    sign = inspect.signature(function_name)
+    params = [param.name for param in sign.parameters.values()]
     values = [localnamespace.get(param, None) for param in params]
 
     params_dict = {param: localnamespace.get(param, None) for param in params}
